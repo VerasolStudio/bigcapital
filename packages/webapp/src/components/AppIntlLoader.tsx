@@ -1,34 +1,37 @@
 // @ts-nocheck
-import { find } from 'lodash';
 import moment from 'moment';
 import * as R from 'ramda';
 import React from 'react';
 import intl from 'react-intl-universal';
-import rtlDetect from 'rtl-detect';
 import { setLocale } from 'yup';
 import { useWatchImmediate } from '../hooks';
 import { AppIntlProvider } from './AppIntlProvider';
 import { withDashboardActions } from '@/containers/Dashboard/withDashboardActions';
 import { useSplashLoading } from '@/hooks/state';
-
-const SUPPORTED_LOCALES = [
-  { name: 'English', value: 'en' },
-  { name: 'العربية', value: 'ar' },
-];
+import {
+  DEFAULT_LOCALE,
+  LOCALE_STORAGE_KEY,
+  getPersistedLocale,
+  isRTLLocale,
+  isSupportedLocale,
+  transformMomentLocale,
+} from '@/constants/locales';
 
 /**
  * Retrieve the current local.
  */
 function getCurrentLocal() {
-  let currentLocale = intl.determineLocale({
-    urlLocaleKey: 'lang',
+  const currentLocale = intl.determineLocale({
+    urlLocaleKey: LOCALE_STORAGE_KEY,
     cookieLocaleKey: 'locale',
-    localStorageLocaleKey: 'lang',
+    localStorageLocaleKey: LOCALE_STORAGE_KEY,
   });
-  if (!find(SUPPORTED_LOCALES, { value: currentLocale })) {
-    currentLocale = 'en';
+  if (isSupportedLocale(currentLocale)) {
+    return currentLocale;
   }
-  return currentLocale;
+  // Falls back to the persisted/browser locale before the default one, so a
+  // Japanese browser lands on Japanese without an explicit selection.
+  return getPersistedLocale() || DEFAULT_LOCALE;
 }
 
 /**
@@ -59,20 +62,15 @@ async function loadMomentLocale(currentLocale) {
 }
 
 /**
- * Modifies the html document direction to RTl if it was rtl-language.
+ * Modifies the html document language and direction of the given locale.
  */
 function useDocumentDirectionModifier(locale, isRTL) {
   React.useEffect(() => {
-    if (isRTL) {
-      const htmlDocument = document.querySelector('html');
-      htmlDocument.setAttribute('dir', 'rtl');
-      htmlDocument.setAttribute('lang', locale);
-    }
-  }, [isRTL, locale]);
-}
+    const htmlDocument = document.querySelector('html');
 
-function transformMomentLocale(currentLocale) {
-  return currentLocale === 'ar' ? 'ar-ly' : currentLocale;
+    htmlDocument.setAttribute('lang', locale);
+    htmlDocument.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+  }, [isRTL, locale]);
 }
 
 /**
@@ -144,7 +142,7 @@ function AppIntlLoader({ children }) {
   const currentLocale = getCurrentLocal();
 
   // Detarmines the document direction based on the given locale.
-  const isRTL = rtlDetect.isRtlLang(currentLocale);
+  const isRTL = isRTLLocale(currentLocale);
 
   // Modifies the html document direction
   useDocumentDirectionModifier(currentLocale, isRTL);

@@ -1,0 +1,18 @@
+{
+  "field.payment_date": "支払日",
+  "field.payment_account": "支払勘定科目",
+  "field.amount": "金額",
+  "field.currency_code": "通貨",
+  "field.exchange_rate": "為替レート",
+  "field.reference_no": "参照番号",
+  "field.description": "説明",
+  "field.line_description": "明細の説明",
+  "field.published": "確定済み",
+  "field.categories": "カテゴリー",
+  "field.expense_account": "経費勘定科目",
+  "field.publish": "確定",
+  "field.status": "ステータス",
+  "field.status.draft": "下書き",
+  "field.status.published": "確定済み",
+  "field.created_at": "作成日時"
+}

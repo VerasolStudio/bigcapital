@@ -1,0 +1,14 @@
+{
+  "field.vendor": "仕入先",
+  "field.payment_date": "支払日",
+  "field.payment_number": "支払番号",
+  "field.payment_account": "支払勘定科目",
+  "field.exchange_rate": "為替レート",
+  "field.note": "備考",
+  "field.reference": "参照番号",
+  "field.entries": "明細",
+  "field.entries.bill": "仕入請求書",
+  "field.entries.payment_amount": "支払額",
+  "field.payment_number_hint": "支払番号は一意である必要があります。",
+  "field.bill_hint": "仕入請求書番号に一致します。"
+}

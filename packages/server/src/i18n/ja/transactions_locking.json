@@ -1,0 +1,9 @@
+{
+  "module.sales.label": "売上",
+  "module.purchases.label": "仕入",
+  "module.financial.label": "財務",
+  "module.all_transactions": "すべての取引",
+  "module.sales.desc": "請求書、領収書、クレジットノート、顧客からの入金、顧客の期首残高。",
+  "module.purchases.desc": "仕入請求書、仕入先への支払、仕入先クレジット、仕入先の期首残高。",
+  "module.financial.desc": "手動仕訳、経費、在庫調整。"
+}

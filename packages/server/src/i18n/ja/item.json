@@ -1,0 +1,23 @@
+{
+  "field.type": "品目タイプ",
+  "field.type.inventory": "在庫品",
+  "field.type.service": "サービス",
+  "field.type.non-inventory": "非在庫品",
+  "field.name": "品目名",
+  "field.code": "品目コード",
+  "field.sellable": "販売可能",
+  "field.purchasable": "仕入可能",
+  "field.cost_price": "仕入単価",
+  "field.sell_price": "販売単価",
+  "field.cost_account": "原価勘定科目",
+  "field.sell_account": "売上勘定科目",
+  "field.sell_description": "販売時の説明",
+  "field.inventory_account": "在庫勘定科目",
+  "field.purchase_description": "仕入時の説明",
+  "field.quantity_on_hand": "在庫数量",
+  "field.note": "備考",
+  "field.category": "カテゴリー",
+  "field.category_hint": "カテゴリー名に一致します。",
+  "field.active": "有効",
+  "field.created_at": "作成日時"
+}

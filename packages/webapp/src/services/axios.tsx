@@ -1,13 +1,14 @@
 // @ts-nocheck
 import axios from 'axios';
 import { store } from '@/store/create-store';
+import { getPersistedLocale } from '@/constants/locales';
 const http = axios.create();
 
 http.interceptors.request.use(
   (request) => {
     const state = store.getState();
     const { token, organization } = state.authentication;
-    const locale = 'en';
+    const locale = getPersistedLocale();
 
     if (token) {
       request.headers.common['x-access-token'] = token;
@@ -18,8 +19,6 @@ http.interceptors.request.use(
     if (locale) {
       request.headers.common['Accept-Language'] = locale;
     }
-    request.headers.common['Accept-Language'] = 'ar';
-
     return request;
   },
   (error) => {

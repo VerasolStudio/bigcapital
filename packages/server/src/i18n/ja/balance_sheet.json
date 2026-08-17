@@ -1,0 +1,21 @@
+{
+  "assets": "資産",
+  "current_asset": "流動資産",
+  "cash_and_cash_equivalents": "現金及び現金同等物",
+  "accounts_receivable": "売掛金",
+  "inventory": "棚卸資産",
+  "other_current_assets": "その他の流動資産",
+  "fixed_asset": "固定資産",
+  "non_current_assets": "非流動資産",
+  "liabilities_and_equity": "負債及び純資産",
+  "liabilities": "負債",
+  "current_liabilities": "流動負債",
+  "long_term_liabilities": "長期負債",
+  "non_current_liabilities": "非流動負債",
+  "equity": "純資産",
+  "net_income": "当期純利益",
+  "account_name": "勘定科目名",
+  "total": "合計",
+  "percentage_of_column": "列比率 %",
+  "percentage_of_row": "行比率 %"
+}

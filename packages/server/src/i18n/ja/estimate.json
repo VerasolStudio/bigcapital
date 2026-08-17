@@ -1,0 +1,20 @@
+{
+  "field.customer": "顧客",
+  "field.estimate_date": "見積日",
+  "field.expiration_date": "有効期限",
+  "field.estimate_number": "見積番号",
+  "field.reference_no": "参照番号",
+  "field.exchange_rate": "為替レート",
+  "field.currency": "通貨",
+  "field.note": "備考",
+  "field.terms_conditions": "取引条件",
+  "field.delivered": "送付済み",
+  "field.entries": "明細",
+  "field.amount": "金額",
+  "field.status": "ステータス",
+  "field.status.draft": "下書き",
+  "field.status.delivered": "送付済み",
+  "field.status.rejected": "却下",
+  "field.status.approved": "承認済み",
+  "field.created_at": "作成日時"
+}
