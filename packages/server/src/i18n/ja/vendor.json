@@ -1,0 +1,13 @@
+{
+  "field.first_name": "名",
+  "field.last_name": "姓",
+  "field.display_name": "表示名",
+  "field.email": "メールアドレス",
+  "field.work_phone": "勤務先電話番号",
+  "field.personal_phone": "個人電話番号",
+  "field.company_name": "会社名",
+  "field.website": "ウェブサイト",
+  "field.opening_balance": "期首残高",
+  "field.opening_balance_at": "期首残高日",
+  "field.currency": "通貨"
+}

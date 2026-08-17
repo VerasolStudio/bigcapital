@@ -1,0 +1,19 @@
+{
+  "field.name": "勘定科目名",
+  "field.description": "説明",
+  "field.slug": "勘定科目スラッグ",
+  "field.code": "勘定科目コード",
+  "field.code_hint": "勘定科目を識別する固有の番号です。",
+  "field.root_type": "大区分",
+  "field.normal": "正常残高",
+  "field.normal.credit": "貸方",
+  "field.normal.debit": "借方",
+  "field.type": "タイプ",
+  "field.active": "有効",
+  "field.currency": "通貨",
+  "field.balance": "残高",
+  "field.bank_balance": "銀行残高",
+  "field.parent_account": "親勘定科目",
+  "field.created_at": "作成日時",
+  "field.account_hint": "勘定科目名またはコードに一致します。"
+}

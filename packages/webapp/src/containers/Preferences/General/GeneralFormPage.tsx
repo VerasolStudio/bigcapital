@@ -13,6 +13,7 @@ import { AppToaster } from '@/components';
 import { withDashboardActions } from '@/containers/Dashboard/withDashboardActions';
 import type { WithDashboardActionsProps } from '@/containers/Dashboard/withDashboardActions';
 import { compose, transformToForm } from '@/utils';
+import { persistLocale } from '@/constants/locales';
 
 const defaultValues: GeneralFormValues = {
   name: '',
@@ -68,8 +69,10 @@ function GeneralFormPageInner({
       });
       setSubmitting(false);
 
-      // Reboot the application if the application's language is mutated.
+      // Reboot the application if the application's language is mutated, the
+      // locale bundles are only resolved once on boot.
       if (organization?.metadata?.language !== values.language) {
+        persistLocale(values.language);
         window.location.reload();
       }
     };

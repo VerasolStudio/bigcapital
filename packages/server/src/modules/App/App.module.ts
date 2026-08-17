@@ -123,13 +123,15 @@ import { AppThrottleModule } from './AppThrottle.module';
     SystemModelsModule,
     EventEmitterModule.forRoot(),
     I18nModule.forRootAsync({
-      useFactory: () => ({
-        fallbackLanguage: 'en',
+      imports: [ConfigModule],
+      useFactory: (configService: ConfigService) => ({
+        fallbackLanguage: configService.get('i18n.fallbackLanguage') || 'en',
         loaderOptions: {
           path: join(__dirname, '../../i18n/'),
           watch: true,
         },
       }),
+      inject: [ConfigService],
       resolvers: [
         new QueryResolver(),
         new HeaderResolver(),

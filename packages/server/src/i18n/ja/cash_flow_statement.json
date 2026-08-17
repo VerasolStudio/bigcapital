@@ -1,0 +1,18 @@
+{
+  "operating_activities": "営業活動によるキャッシュフロー",
+  "net_income": "当期純利益",
+  "operating_accounts": "営業活動による当期純利益の調整。",
+  "net_cash_operating": "営業活動によるキャッシュフロー合計",
+  "investment_activities": "投資活動によるキャッシュフロー",
+  "net_cash_investing": "投資活動によるキャッシュフロー合計",
+  "financial_activities": "財務活動によるキャッシュフロー",
+  "net_cash_financing": "財務活動によるキャッシュフロー合計",
+  "cash_beginning_period": "期首の現金残高",
+  "net_cash_increase": "当期の現金増減額",
+  "cash_end_period": "期末の現金残高",
+  "account_name": "勘定科目名",
+  "total": "合計",
+  "sheet_name": "キャッシュフロー計算書",
+  "from_date": "開始",
+  "to_date": "終了"
+}

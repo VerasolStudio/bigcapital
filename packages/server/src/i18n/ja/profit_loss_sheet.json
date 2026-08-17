@@ -1,0 +1,16 @@
+{
+  "income": "収益",
+  "cost_of_sales": "売上原価",
+  "gross_profit": "売上総利益",
+  "expenses": "費用",
+  "net_operating_income": "営業利益",
+  "other_income": "営業外収益",
+  "other_expenses": "営業外費用",
+  "net_income": "当期純利益",
+  "account_name": "勘定科目名",
+  "total": "合計",
+  "percentage_of_income": "収益比率 %",
+  "percentage_of_expenses": "費用比率 %",
+  "percentage_of_column": "列比率 %",
+  "percentage_of_row": "行比率 %"
+}

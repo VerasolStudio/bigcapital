@@ -1,0 +1,14 @@
+{
+  "opening_balance": "期首残高",
+  "closing_balance": "期末残高",
+  "date": "日付",
+  "transaction_type": "取引区分",
+  "transaction_number": "取引番号",
+  "quantity": "数量",
+  "rate": "単価",
+  "total": "合計",
+  "value": "評価額",
+  "profit_margin": "利益率",
+  "running_quantity": "累計数量",
+  "running_value": "累計評価額"
+}

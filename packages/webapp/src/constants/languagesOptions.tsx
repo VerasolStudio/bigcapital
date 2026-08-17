@@ -1,5 +1,12 @@
-import intl from 'react-intl-universal';
+import { SUPPORTED_LOCALES } from './locales';
 
-export const getLanguages = (): Array<{ name: string; value: string }> => [
-  { name: intl.get('english'), value: 'en' },
-];
+/**
+ * Retrieves the languages the application can be displayed in. The label shows
+ * the language in its own script so it stays readable whatever the current
+ * locale is.
+ */
+export const getLanguages = (): Array<{ name: string; value: string }> =>
+  SUPPORTED_LOCALES.map(({ value, nativeName }) => ({
+    name: nativeName,
+    value,
+  }));

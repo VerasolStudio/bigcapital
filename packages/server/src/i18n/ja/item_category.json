@@ -1,0 +1,6 @@
+{
+  "field.name": "名前",
+  "field.description": "説明",
+  "field.count": "件数",
+  "field.created_at": "作成日時"
+}

@@ -1,0 +1,16 @@
+{
+  "field.customer": "顧客",
+  "field.payment_date": "入金日",
+  "field.amount": "金額",
+  "field.reference_no": "参照番号",
+  "field.deposit_account": "入金先勘定科目",
+  "field.payment_receive_no": "入金番号",
+  "field.statement": "摘要",
+  "field.entries": "明細",
+  "field.exchange_rate": "為替レート",
+  "field.invoice": "請求書",
+  "field.entries.payment_amount": "入金額",
+  "field.created_at": "作成日時",
+  "field.payment_no_hint": "入金番号は一意である必要があります。",
+  "field.invoice_hint": "請求書番号に一致します。"
+}

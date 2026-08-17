@@ -1,0 +1,32 @@
+{
+  "HELLO": "こんにちは",
+  "PRODUCT": {
+    "NEW": "新しい商品: {name}"
+  },
+  "ENGLISH": "英語",
+  "ARRAY": [
+    "ONE",
+    "TWO",
+    "THREE"
+  ],
+  "cat": "猫",
+  "cat_name": "猫: {name}",
+  "set-up-password": {
+    "heading": "{username} さん、こんにちは",
+    "title": "パスワードをお忘れの場合",
+    "followLink": "リンクを開いてパスワードを設定してください"
+  },
+  "day_interval": {
+    "one": "毎日",
+    "other": "{count} 日ごと",
+    "zero": "なし"
+  },
+  "nested": "買い物に行きます: $t(test.day_interval, {{\"count\": {count} }})",
+  "financial_sheet.previoud_period_date": "{{date}}（前期）",
+  "fianncial_sheet.previous_period_change": "増減額（前期比）",
+  "financial_sheet.previous_period_percentage": "増減率 %（前期比）",
+  "financial_sheet.previous_year_date": "{{date}}（前年）",
+  "financial_sheet.previous_year_change": "増減額（前年比）",
+  "financial_sheet.previous_year_percentage": "増減率 %（前年比）",
+  "financial_sheet.total_row": "{{value}} 合計"
+}

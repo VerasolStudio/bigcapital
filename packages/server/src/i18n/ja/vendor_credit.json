@@ -1,0 +1,18 @@
+{
+  "view.draft": "下書き",
+  "view.published": "確定済み",
+  "view.open": "オープン",
+  "view.closed": "クローズ",
+  "field.vendor": "仕入先",
+  "field.vendor_credit_number": "仕入先クレジット番号",
+  "field.vendor_credit_date": "仕入先クレジット日付",
+  "field.reference_no": "参照番号",
+  "field.exchange_rate": "為替レート",
+  "field.note": "備考",
+  "field.open": "オープン",
+  "field.entries": "明細",
+  "field.item": "品目",
+  "field.rate": "単価",
+  "field.quantity": "数量",
+  "field.description": "説明"
+}
